@@ -5,24 +5,186 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<meta name="description" content="Who is Mwape Ernest? Meet Mwape Ernest, an Electrical and Electronics Engineering graduand from The Copperbelt University in Zambia, graduating with Distinction (Cum Laude) in 2027. Explore his engineering background, projects, graphic design work and professional interests.">
+<meta name="description" content="Who is Mwape Ernest? Meet Mwape Ernest, an Electrical and Electronics Engineering graduand from The Copperbelt University in Zambia, graduating with Distinction (Cum Laude) in 2027. Explore his engineering background, graphic design portfolio, projects and professional interests.">
 
 <meta name="author" content="Mwape Ernest">
 <meta name="robots" content="index, follow">
 
-<title>Mwape Ernest | Electrical & Electronics Engineer | Zambia</title>
+<title>Mwape Ernest | Electrical & Electronics Engineer & Graphic Designer | Zambia</title>
 
 <link rel="canonical" href="https://mwapeernest01-ctrl.github.io/">
 <link rel="stylesheet" href="style.css">
 
-<!-- Open Graph Metadata -->
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Mwape Ernest | Electrical & Electronics Engineer">
 <meta property="og:description" content="Discover Mwape Ernest, Electrical & Electronics Engineering graduand from The Copperbelt University, Zambia, graduating with Distinction (Cum Laude) in 2027.">
 <meta property="og:url" content="https://mwapeernest01-ctrl.github.io/">
 <meta property="og:site_name" content="Mwape Ernest">
 
-<!-- Structured Data: Personal Profile -->
+<!-- GRAPHIC DESIGN PORTFOLIO STYLES -->
+<style>
+.portfolio-section {
+    background: #101014;
+    color: #ffffff;
+    padding: 90px 7%;
+}
+
+.portfolio-section .heading h2 {
+    color: #ffffff;
+}
+
+.portfolio-intro {
+    color: #b8b8c2;
+    max-width: 700px;
+    line-height: 1.8;
+    margin: 15px 0 40px;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.portfolio-item {
+    background: #1b1b22;
+    border: 1px solid #303039;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-6px);
+    border-color: #888899;
+}
+
+.portfolio-image-link {
+    display: block;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.04);
+}
+
+.portfolio-caption {
+    padding: 17px 18px 20px;
+}
+
+.portfolio-caption h3 {
+    color: #ffffff;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.portfolio-caption p {
+    color: #aaaab5;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.portfolio-cta {
+    margin-top: 50px;
+    padding: 35px;
+    border: 1px solid #35353e;
+    border-radius: 12px;
+    background: #191920;
+    text-align: center;
+}
+
+.portfolio-cta h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.portfolio-cta p {
+    color: #b8b8c2;
+    margin-bottom: 20px;
+}
+
+.portfolio-cta a {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #111111;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.portfolio-cta a:hover {
+    background: #d8d8df;
+}
+
+/* Image enlargement overlay */
+.portfolio-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.94);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.portfolio-lightbox.active {
+    display: flex;
+}
+
+.portfolio-lightbox img {
+    max-width: 95%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.portfolio-lightbox button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .portfolio-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .portfolio-section {
+        padding: 65px 5%;
+    }
+
+    .portfolio-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-cta {
+        padding: 25px 18px;
+    }
+}
+</style>
+
+<!-- STRUCTURED DATA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,11 +227,13 @@
 <header class="hero" id="home">
 <nav>
 <a class="brand" href="#home">MWAPE ERNEST</a>
+
 <div class="navlinks">
 <a href="#about">About</a>
 <a href="#education">Education</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
+<a href="#graphic-portfolio">Graphic Design</a>
 <a href="#contact">Contact</a>
 </div>
 </nav>
@@ -200,10 +364,122 @@
 </div>
 </section>
 
+<!-- GRAPHIC DESIGN PORTFOLIO -->
+<section id="graphic-portfolio" class="portfolio-section">
+
+<div class="heading">
+<span>05</span>
+<h2>Graphic Design Portfolio</h2>
+</div>
+
+<p class="portfolio-intro">
+A collection of my creative work, exploring visual communication, design and storytelling. From promotional graphics to event designs, each project reflects my passion for creativity and attention to detail.
+</p>
+
+<div class="portfolio-gallery">
+
+<article class="portfolio-item">
+<a class="portfolio-image-link" href="images/portfolio/design-01.jpg" onclick="openPortfolioImage(event,this)">
+<img src="images/portfolio/design-01.jpg" alt="Graphic design project 01" loading="lazy">
+</a>
+<div class="portfolio-caption">
+<h3>Design Project 01</h3>
+<p>Graphic design and visual communication.</p>
+</div>
+</article>
+
+<article class="portfolio-item">
+<a class="portfolio-image-link" href="images/portfolio/design-02.jpg" onclick="openPortfolioImage(event,this)">
+<img src="images/portfolio/design-02.jpg" alt="Graphic design project 02" loading="lazy">
+</a>
+<div class="portfolio-caption">
+<h3>Design Project 02</h3>
+<p>Creative promotional design.</p>
+</div>
+</article>
+
+<article class="portfolio-item">
+<a class="portfolio-image-link" href="images/portfolio/design-03.jpg" onclick="openPortfolioImage(event,this)">
+<img src="images/portfolio/design-03.jpg" alt="Graphic design project 03" loading="lazy">
+</a>
+<div class="portfolio-caption">
+<h3>Design Project 03</h3>
+<p>Creative artwork and layout.</p>
+</div>
+</article>
+
+<article class="portfolio-item">
+<a class="portfolio-image-link" href="images/portfolio/design-04.jpg" onclick="openPortfolioImage(event,this)">
+<img src="images/portfolio/design-04.jpg" alt="Graphic design project 04" loading="lazy">
+</a>
+<div class="portfolio-caption">
+<h3>Design Project 04</h3>
+<p>Promotional and advertising design.</p>
+</div>
+</article>
+
+<article class="portfolio-item">
+<a class="portfolio-image-link" href="images/portfolio/design-05.jpg" onclick="openPortfolioImage(event,this)">
+<img src="images/portfolio/design-05.jpg" alt="Graphic design project 05" loading="lazy">
+</a>
+<div class="portfolio-caption">
+<h3>Design Project 05</h3>
+<p>Creative visual presentation.</p>
+</div>
+</article>
+
+<article class="portfolio-item">
+<a class="portfolio-image-link" href="images/portfolio/design-06.jpg" onclick="openPortfolioImage(event,this)">
+<img src="images/portfolio/design-06.jpg" alt="Graphic design project 06" loading="lazy">
+</a>
+<div class="portfolio-caption">
+<h3>Design Project 06</h3>
+<p>Digital graphic design.</p>
+</div>
+</article>
+
+<article class="portfolio-item">
+<a class="portfolio-image-link" href="images/portfolio/design-07.jpg" onclick="openPortfolioImage(event,this)">
+<img src="images/portfolio/design-07.jpg" alt="Graphic design project 07" loading="lazy">
+</a>
+<div class="portfolio-caption">
+<h3>Design Project 07</h3>
+<p>Creative design project.</p>
+</div>
+</article>
+
+<article class="portfolio-item">
+<a class="portfolio-image-link" href="images/portfolio/design-08.jpg" onclick="openPortfolioImage(event,this)">
+<img src="images/portfolio/design-08.jpg" alt="Graphic design project 08" loading="lazy">
+</a>
+<div class="portfolio-caption">
+<h3>Design Project 08</h3>
+<p>Visual design and composition.</p>
+</div>
+</article>
+
+</div>
+
+<div class="portfolio-cta">
+<h3>Have a Design Project in Mind?</h3>
+<p>Let's work together to bring your ideas to life through creative and professional designs.</p>
+<a href="https://wa.me/260966139731?text=Hello%20Mwape%2C%20I%20am%20interested%20in%20your%20graphic%20design%20services.">
+Hire Me on WhatsApp
+</a>
+</div>
+
+</section>
+
+<!-- IMAGE VIEWER -->
+<div class="portfolio-lightbox" id="portfolioLightbox" onclick="closePortfolioImage()">
+<button type="button" aria-label="Close image" onclick="closePortfolioImage()">×</button>
+<img id="portfolioLightboxImage" src="" alt="Enlarged graphic design">
+</div>
+
 <!-- BEYOND ENGINEERING -->
 <section class="section">
 <div class="heading">
-<span>05</span>
+<span>06</span>
 <h2>Beyond Engineering</h2>
 </div>
 
@@ -216,11 +492,11 @@
 <!-- CONTACT -->
 <section id="contact" class="section contact">
 <div class="heading">
-<span>06</span>
+<span>07</span>
 <h2>Contact</h2>
 </div>
 
-<p>For engineering opportunities, collaborations and professional enquiries:</p>
+<p>For engineering opportunities, graphic design projects, collaborations and professional enquiries:</p>
 
 <div class="links">
 
@@ -242,6 +518,35 @@
 <footer>
 © 2026 Mwape Ernest. Built with GitHub Pages.
 </footer>
+
+<!-- PORTFOLIO IMAGE JAVASCRIPT -->
+<script>
+function openPortfolioImage(event, link) {
+    event.preventDefault();
+
+    const lightbox = document.getElementById("portfolioLightbox");
+    const image = document.getElementById("portfolioLightboxImage");
+
+    image.src = link.href;
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+}
+
+function closePortfolioImage() {
+    const lightbox = document.getElementById("portfolioLightbox");
+    const image = document.getElementById("portfolioLightboxImage");
+
+    lightbox.classList.remove("active");
+    image.src = "";
+    document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closePortfolioImage();
+    }
+});
+</script>
 
 </body>
 </html>
